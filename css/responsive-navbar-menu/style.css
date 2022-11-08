@@ -153,3 +153,35 @@ a {
 .show {
     left: 0;
 }
+
+.active {
+    color: var(--white-color);
+}
+
+.dropdown-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-icon {
+    font-size: 1.3rem;
+    transition: .5s;
+}
+
+.dropdown-menu {
+    margin: 1rem 0 0 1rem;
+    display: none;
+}
+
+.dropdown-item {
+    margin: 1rem 0;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover>.dropdown-item {
+    transform: rotate(180deg);
+}
