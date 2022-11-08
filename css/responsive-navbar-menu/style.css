@@ -149,3 +149,7 @@ a {
 .nav-link:hover {
     color: var(--white-color);
 }
+
+.show {
+    left: 0;
+}
