@@ -9,3 +9,6 @@ function Book(title, author, pages, read) {
 }
 const silkyRoad = new Book("silky Road", "Baren Davis", 456, "Not yet read");
 silkyRoad.info();
+
+let obj = new Object();
+console.log(obj.constructor)
