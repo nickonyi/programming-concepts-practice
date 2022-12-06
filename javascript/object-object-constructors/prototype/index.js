@@ -11,3 +11,6 @@ newObj.print();
 
 let myObj = new Object();
 console.log(myObj.constructor);
+
+let newAccount = new Account();
+console.log(newAccount.constructor);
