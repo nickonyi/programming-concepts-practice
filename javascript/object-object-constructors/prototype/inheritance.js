@@ -4,7 +4,7 @@ function Plant() {
 }
 
 Plant.prototype.showNameAndColor = function() {
-    console.log("I am " + this.name + "and my color is" + this.color);
+    console.log("I am a " + this.name + " and my color is " + this.color);
 }
 
 Plant.prototype.amIorganic = function() {
@@ -12,3 +12,13 @@ Plant.prototype.amIorganic = function() {
         console.log("I am organic baby!!");
     }
 }
+
+function Fruit(name, color) {
+    this.name = name;
+    this.color = color;
+}
+
+Fruit.prototype = new Plant();
+let banana = new Fruit("banana", "yellow");
+banana.showNameAndColor();
+banana.amIorganic();
