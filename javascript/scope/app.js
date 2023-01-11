@@ -9,7 +9,7 @@
 //const factoryFunction = String => {
 //    const capitalizeString = () => String.toUpperCase();
 //    const printString = () => console.log(`----${capitalizeString()}------`);
-//    return { printString, capitalizeString };
+//    return { printString };
 //}
 //
 //const taco = factoryFunction("taco bell sponser me");
@@ -27,8 +27,6 @@ const counterCreator = () => {
 }
 
 let count = counterCreator();
-count();
-count();
-count();
+
 count();
 count();
