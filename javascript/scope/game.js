@@ -24,7 +24,11 @@ const Player = (name, level) => {
     return { attack, damage, getName, getLevel }
 }
 
-const Rambo = Player("Rambo", 4);
+const rambo = Player("Rambo", 4);
 const badGuy = Player("Billie", 5);
 
-Rambo.attack(badGuy);
+rambo.attack(badGuy);
+
+
+
+console.log(rambo.health);

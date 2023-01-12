@@ -61,9 +61,17 @@ function C() {
 //// { name: 'Maynard', color: 'red', number: 34, food: 'rice' }
 
 
+let a = 2;
 
 function foo() {
     a = 5;
+
+    function bar() {
+        a = 7;
+        console.log(a);
+    }
+    bar();
 }
 foo();
+
 console.log(a);
