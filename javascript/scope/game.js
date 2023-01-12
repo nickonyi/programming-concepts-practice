@@ -3,7 +3,7 @@ const Player = (name, level) => {
     const getLevel = () => level;
     const getName = () => name;
     const die = () => {
-        console.log("Uh oh");
+        console.log("Uh oh You are wasted my friend");
     }
     const damage = x => {
         health -= x;
@@ -24,7 +24,7 @@ const Player = (name, level) => {
     return { attack, damage, getName, getLevel }
 }
 
-const Rambo = Player("Rambo", 10);
-const badGuy = Player("Billie", 9);
+const Rambo = Player("Rambo", 4);
+const badGuy = Player("Billie", 5);
 
 Rambo.attack(badGuy);
