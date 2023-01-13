@@ -18,15 +18,23 @@
 //
 //console.log(taco.capitalizeString())
 
-const counterCreator = () => {
-    let count = 0;
-    return () => {
-        console.log(count);
-        count++;
-    }
-}
+//const counterCreator = () => {
+//    let count = 0;
+//    return () => {
+//        console.log(count);
+//        count++;
+//    }
+//}
+//
+//let count = counterCreator();
+//
+//count();
+//count();
 
-let count = counterCreator();
 
-count();
-count();
+import Events from 'eventemitter3';
+
+const object = {};
+Object.assign(object, Events.prototype);
+object.on("event", payload => console.log(payload));
+object.emit("event", "ibambe bwana");
