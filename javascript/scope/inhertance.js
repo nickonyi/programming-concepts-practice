@@ -41,10 +41,13 @@ let myModule = (function() {
         console.log(privateProperty);
     }
     return {
+
         publicMethod: function() {
             privateMethod();
         }
     }
 }());
 
+
 myModule.publicMethod();
+console.log(myModule.privateProperty);
