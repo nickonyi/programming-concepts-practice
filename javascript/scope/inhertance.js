@@ -34,4 +34,17 @@
 //
 //console.log(msg);
 //(function() { console.log("furahia maisha!!!!!") }());
-let myModule = (function() {}());
+let myModule = (function() {
+    let privateProperty = "Arsenal is the team";
+
+    function privateMethod() {
+        console.log(privateProperty);
+    }
+    return {
+        publicMethod: function() {
+            privateMethod();
+        }
+    }
+}());
+
+myModule.publicMethod();
