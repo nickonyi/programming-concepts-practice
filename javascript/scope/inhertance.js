@@ -22,14 +22,16 @@
 //const returnObj = Object.assign(source, target);
 //console.table(returnObj);
 
-const proto = {
-    hello: function() {
-        return `Hello my name is ${this.name}`;
-    }
-}
-
-const nick = Object.assign({}, proto, { name: "nick" });
-
-const msg = nick.hello();
-
-console.log(msg);
+//const proto = {
+//    hello: function() {
+//        return `Hello my name is ${this.name}`;
+//    }
+//}
+//
+//const nick = Object.assign({}, proto, { name: "nick" });
+//
+//const msg = nick.hello();
+//
+//console.log(msg);
+//(function() { console.log("furahia maisha!!!!!") }());
+let myModule = (function() {}());
